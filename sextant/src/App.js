@@ -1,13 +1,15 @@
 import './App.css';
-import Banner from './components/banner';
-import Exhibit from './components/Exhibit';
+import Banner from './banner';
+import Exhibit from './Exhibit';
+import AddressDisplay from './addressdisplay';
 
 function App() {
   return (
     <div className="App">
       <Banner />
-      <Exhibit title="Sample Data Panel">
-        <p>This is where child components will go!</p>
+      <Exhibit title="Your IP Addresses">
+        <AddressDisplay version="v4" />
+        <AddressDisplay version="v6" />
       </Exhibit>
     </div>
   );
